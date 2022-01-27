@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  background-color: white;
+  width: 310px;
+  padding: 5px 5px 5px 5px;
+}
+
+header {
+  height: 100px;
+  background-color: gold;
+}
+
+.top {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  border: none;
+  opacity: 0.5;
+}
+.search {
+  display: flex;
+  justify-content: center;
+}
+.search-bar {
+  width: 300px;
+  height: 60px;
+  border-radius: 15px;
+  box-shadow: 0px 2px gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.daybook-img {
+  width: 100px;
+  height: 120px;
+  border-radius: 15px;
+  background-color: indianred;
+}
+
+.daybook {
+  display: flex;
+  justify-content: start;
+}
+
+.daybook-info {
+  height: 120px;
+  width: 180px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.daybook-info-btn-a {
+  width: 200px;
+  display: flex;
+  justify-content: start;
+}
+
+.top-ad-books-img {
+  width: 70px;
+  height: 95px;
+  border-radius: 15px;
+  background-color: indianred;
+}
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+li {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.top-ad-books {
+  display: flex;
+  justify-content: start;
+  overflow-x: scroll;
+}
+
+.writer-img {
+  width: 150px;
+  height: 180px;
+  border-radius: 15px;
+  background-color: indianred;
+}
+
+.writer {
+  display: flex;
+  justify-content: start;
+}
+
+.writer-notice {
+  height: 100px;
+  width: 180px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.text__bold {
+  font-weight: bold;
+}

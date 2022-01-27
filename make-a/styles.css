@@ -1,0 +1,79 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: cadetblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.box {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.one {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 200px;
+  animation: oneAni 1s ease infinite;
+}
+
+.sq {
+  width: 150px;
+}
+
+.one > div {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: azure;
+}
+
+.sq > div {
+  background-color: azure;
+  width: 20px;
+  height: 80px;
+  animation: sqAni 1s ease-in-out infinite;
+}
+
+@keyframes oneAni {
+  50% {
+    transform: rotate(0.5turn);
+  }
+  100% {
+    transform: rotate(0.5turn);
+  }
+}
+
+@keyframes sqAni {
+  0% {
+    transform: none;
+  }
+  25% {
+    transform: scaleY(2);
+  }
+  50%,
+  100% {
+    transform: none;
+  }
+}
+
+#y {
+  animation-delay: 0.1s;
+}
+#z {
+  animation-delay: 0.2s;
+}
+#xx {
+  animation-delay: 0.3s;
+}
+#xy {
+  animation-delay: 0.4s;
+}
