@@ -5,6 +5,8 @@
 }
 
 body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   display: flex;
   justify-content: center;
 }
@@ -28,22 +30,30 @@ header {
   align-items: center;
 }
 
+input:focus {
+  outline: none;
+}
+
 input {
+  width: 100%;
   border: none;
-  opacity: 0.5;
-}
-.search {
-  display: flex;
-  justify-content: center;
-}
-.search-bar {
-  width: 300px;
-  height: 60px;
+  padding: 15px 25px;
+  font-size: 14px;
   border-radius: 15px;
   box-shadow: 0px 2px gray;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+}
+
+.search-bar {
+  width: 95%;
+  position: relative;
+  top: -20px;
+  margin: 0 auto;
+}
+
+.search-bar i {
+  position: absolute;
+  top: 15px;
+  right: 20px;
 }
 
 .daybook-img {
@@ -68,9 +78,17 @@ input {
 }
 
 .daybook-info-btn-a {
-  width: 200px;
+  width: 65%;
   display: flex;
-  justify-content: start;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.daybook-info-btn-b {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 65%;
 }
 
 .top-ad-books-img {
@@ -119,4 +137,8 @@ li {
 
 .text__bold {
   font-weight: bold;
+}
+
+.stars {
+  font-size: 8px;
 }
